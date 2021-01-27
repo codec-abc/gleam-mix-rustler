@@ -23,3 +23,5 @@ erl_crash.dump
 elixir_with_gleam-*.tar
 
 gen
+
+priv/
