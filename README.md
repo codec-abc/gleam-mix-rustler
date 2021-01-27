@@ -13,6 +13,8 @@ Then to run
 ````elixir
 iex -S mix
 ElixirWithGleam.hello()
+:hello.greeting()
 RustFFI.add(2, 3)
 RustFFI.read_file("README.md")
+:hello.read_file_with_gleam("README.md")
 ````

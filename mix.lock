@@ -1,5 +1,5 @@
 %{
-  "gleam_stdlib": {:hex, :gleam_stdlib, "0.9.0", "d1323850e8c1481d8d6661ee572dd54d5f0f1c2ccef208a0adebb72183b7b465", [:rebar3], [], "hexpm", "01cf1c5d9047121f1f88913448df3fe7f9016c6f7d98a9729219a06c4d88395d"},
+  "gleam_stdlib": {:hex, :gleam_stdlib, "0.11.0", "9b1089739574cdf78a1c25a463d770a98f59e63a92324d17095ad67e867ee549", [:rebar3], [], "hexpm", "5508e169e20369fc8d400481d3f37ccb2cfd880509f63d6e2b6d85f939bc991b"},
   "mix_gleam": {:hex, :mix_gleam, "0.1.0", "a0cee5d30de865124a32ca6cd53b64c3e2ac57f12adf6e47b88fb673f47c716e", [:mix], [], "hexpm", "9ff518e6aab444c7f2e74038f9383020ef89810cf1f4402911f33b202ffd72e7"},
   "rustler": {:hex, :rustler, "0.21.1", "5299980be32da997c54382e945bacaa015ed97a60745e1e639beaf6a7b278c65", [:mix], [{:toml, "~> 0.5.2", [hex: :toml, repo: "hexpm", optional: false]}], "hexpm", "6ee1651e10645b2b2f3bb70502bf180341aa058709177e9bc28c105934094bc6"},
   "toml": {:hex, :toml, "0.5.2", "e471388a8726d1ce51a6b32f864b8228a1eb8edc907a0edf2bb50eab9321b526", [:mix], [], "hexpm", "f1e3dabef71fb510d015fad18c0e05e7c57281001141504c6b69d94e99750a07"},
