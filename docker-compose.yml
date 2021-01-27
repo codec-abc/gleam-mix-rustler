@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  sandbox:
+    build:
+      context: "."
+      dockerfile: "Dockerfile"
+    # Don't mount volumes, it includes written directories like gen/deps makes startup not reproducable
+    # volumes:
+    #   - .:/opt/app
