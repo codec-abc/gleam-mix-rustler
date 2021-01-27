@@ -36,8 +36,9 @@ fn read_file<'a>(env: Env<'a>, args: &[Term<'a>]) -> Result<Term<'a>, Error> {
         }
         Err(error) => {
             let string_error: String = error.to_string();
-            let boxed_error_msg = Box::new(string_error);
-            Err(rustler::error::Error::RaiseTerm(boxed_error_msg))
+            //let boxed_error_msg = Box::new(string_error);
+            //Err(rustler::error::Error::RaiseTerm(boxed_error_msg))
+            Ok((atoms::error(), string_error).encode(env))
         }
     }
     
