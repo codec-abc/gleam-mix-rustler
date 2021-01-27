@@ -10,8 +10,9 @@ mix compile
 
 Then to run
 
-````sh
+````elixir
 iex -S mix
 ElixirWithGleam.hello()
 RustFFI.add(2, 3)
+RustFFI.read_file("README.md")
 ````
