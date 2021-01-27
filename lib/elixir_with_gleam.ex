@@ -6,4 +6,5 @@ defmodule ElixirWithGleam do
   def hello do
     :hello.switch(:hello.greeting())
   end
+
 end

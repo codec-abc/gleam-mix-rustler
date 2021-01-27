@@ -1,38 +1,17 @@
-# ElixirWithGleam
+Project based on [ElixirWithGleam](https://github.com/midas-framework/elixir_with_gleam) to add Rustler on top of it.
 
-A example project with [Gleam](https://gleam.run/) and [Elixir](https://elixir-lang.org/) playing nicely with [Mix](https://elixir-lang.org/getting-started/mix-otp/introduction-to-mix.html).
+To compile run
 
-To use this repo you need to have both Elixir and Gleam installed.
+````sh
+curl https://sh.rustup.rs -sSf | sh # (Proceed with default install)
+mix deps.get
+mix compile
+````
 
-## Steps to add Gleam to an existing Mix Project.
+Then to run
 
-Install gleam binary
-
-https://gleam.run/getting-started/installing-gleam.html
-
-Update `mix.exs` to compile `.gleam` files and include the Gleam standard library.
-
-```elixir
-defmodule ElixirWithGleam.MixProject do
-  use Mix.Project
-
-  def project do
-    [
-      # ...
-      erlc_paths: ["src", "gen"],
-      compilers: [:gleam | Mix.compilers()],
-      # ...
-    ]
-  end
-
-  defp deps do
-    [
-      # ...
-      {:mix_gleam, "~> 0.1.0"},
-      {:gleam_stdlib, "~> 0.8.0"}
-      # ...
-    ]
-  end
-  # ...
-end
-```
+````sh
+iex -S mix
+ElixirWithGleam.hello()
+RustFFI.add(2, 3)
+````
